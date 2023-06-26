@@ -1,6 +1,6 @@
 # Welcome to Math Utility Repo
 
-* Coming soom...
+* Coming soon...
 
 #### Copyright &#169; 2023 giahuy
 
