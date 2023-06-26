@@ -17,18 +17,22 @@ public class MathUtility {
 //    hàm chỉ cho phép n=0..20->n>20 ném exception
 
     public static long getFactorial(int n) {
-        if (n<0||n>=20) throw new IllegalArgumentException("Invalid n. n must be between 0..20");
+        if (n < 0 || n >= 20) {
+            throw new IllegalArgumentException("Invalid n. n must be between 0..20");
+        }
         if (n == 0 || n == 1) {
             return 1;
-        }        
-        long product = 1;
-        for (int i = 2; i <= n; i++) {
-            product *= i;
         }
-        return product;
-    }
+        return n * getFactorial(n - 1);
 
+    }
 }
+//5!=4!x5=5x4!
+//4!=4x3!
+//3!=3x2!
+//2!=2x1!
+//1!=1
+
 //TDD: test drigver development là kĩ thuật  viết code có chất lượng bằng cách code và test case và test run dc  thực thi đan xen song song, vừa viết code, vừa test.
 //Công việc của QC và developer có điểm giống nhau
 //đều phải thiết kế các test và run chúng để coi đúng sai
@@ -49,7 +53,6 @@ public class MathUtility {
 //2.Call getF() with n=0; getF(0) getF(n)
 //expected results
 //getF(0) must return 1
-
 //Test case #1(mục đích test case): Check getF() method with n=1
 //Steps
 //1.given n=1
