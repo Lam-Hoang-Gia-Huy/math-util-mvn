@@ -7,5 +7,5 @@
 #### Copyright &#169; 2023 giahuy
 
 ### Screen-shots
-![DDT Source with JUnit](https://github.com/Lam-Hoang-Gia-Huy/math-util-mvn/tree/main/Screenshots)
+![DDT Source with JUnit](https://github.com/Lam-Hoang-Gia-Huy/math-util-mvn/blob/main/Screenshots/DDT%20Source%20with%20JUnit.PNG)
 
